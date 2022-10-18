@@ -25,14 +25,14 @@
 # пусть N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)
 
 
-n = 4
-result=1
-i=1
-for i in range(n):
-    if i <=n:
-       i= i+1
-       result *= i
-       print(result, end= ' ')       
+# n = 4
+# result=1
+# i=1
+# for i in range(n):
+#     if i <=n:
+#        i= i+1
+#        result *= i
+#        print(result, end= ' ')       
 
 
 # 3. Задайте список из n чисел последовательности (1+1/n)n и выведите на экран их сумму
@@ -41,7 +41,13 @@ for i in range(n):
 # Сумма 9.06
 
 
-
+# print(f'Введите n: ')
+n=int(input('Введите n: '))
+d={a: (1+1/a)**a for a in range(1,n+1)}
+print(d)
+values = d.values()
+result = sum(values)
+print(f'Cумма значений равна: {result}')
 
 
 # 4. Задайте список из N элементов, заполненных числами из промежутка [-N, N]. Найдите произведение элементов на указанных позициях. 
