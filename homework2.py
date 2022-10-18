@@ -4,19 +4,19 @@
 # 0,56 -> 11
 
 # в случае ввода целого числа
-number = int (input ("Введите число: ")) 
-sum = 0 
-while number != 0: 
-      sum = sum + number % 10 
-      number = number // 10 
-print (sum)
-# в случае если введено вещественное число
-number = (input ("Введите число: ")) 
-sum = 0 
-for a in number:
-    if a.isdigit():
-        sum += int(a)
-print(sum)
+# number = int (input ("Введите число: ")) 
+# sum = 0 
+# while number != 0: 
+#       sum = sum + number % 10 
+#       number = number // 10 
+# print (sum)
+# в случае если вводим вещественное число
+# number = (input ("Введите число: ")) 
+# sum = 0 
+# for a in number:
+#     if a.isdigit():
+#         sum += int(a)
+# print(sum)
 
 
 
@@ -25,14 +25,28 @@ print(sum)
 # пусть N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)
 
 
-# number = int (input ("Введите число: ")) 
-# result = 1
-# i=1
-# # if (number < 1):
-# #     print('введите число больше или равно 1')
-# if i <= number:
-#    i+=1
-#    result = number * i
-# print(result)
+n = 4
+result=1
+i=1
+for i in range(n):
+    if i <=n:
+       i= i+1
+       result *= i
+       print(result, end= ' ')       
 
+
+# 3. Задайте список из n чисел последовательности (1+1/n)n и выведите на экран их сумму
+#  Пример:
+# Для n=4 {1: 2, 2: 2.25, 3: 2.37, 4: 2.44} 
+# Сумма 9.06
+
+
+
+
+
+# 4. Задайте список из N элементов, заполненных числами из промежутка [-N, N]. Найдите произведение элементов на указанных позициях. 
+# Позиции хранятся в файле file.txt в одной строке одно число.
+
+
+# 5. Реализуйте алгоритм перемешивания списка.
 
