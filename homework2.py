@@ -2,3 +2,37 @@
 # Пример:
 # 6782 -> 23
 # 0,56 -> 11
+
+# в случае ввода целого числа
+number = int (input ("Введите число: ")) 
+sum = 0 
+while number != 0: 
+      sum = sum + number % 10 
+      number = number // 10 
+print (sum)
+# в случае если введено вещественное число
+number = (input ("Введите число: ")) 
+sum = 0 
+for a in number:
+    if a.isdigit():
+        sum += int(a)
+print(sum)
+
+
+
+# 2. Напишите программу, которая принимает на вход число N и выдает набор произведений чисел от 1 до N.
+# Пример:
+# пусть N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)
+
+
+# number = int (input ("Введите число: ")) 
+# result = 1
+# i=1
+# # if (number < 1):
+# #     print('введите число больше или равно 1')
+# if i <= number:
+#    i+=1
+#    result = number * i
+# print(result)
+
+
